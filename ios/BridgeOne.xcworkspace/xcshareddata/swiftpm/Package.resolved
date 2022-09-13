@@ -1,0 +1,158 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "8dd85aee02e39dd280c75eef88ffdb86eed4b07b",
+        "version" : "5.6.2"
+      }
+    },
+    {
+      "identity" : "ghbalmungcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/gnglobaldependencies/ios/ghbalmungcore.git",
+      "state" : {
+        "branch" : "feature/refactor_url_encode_form_data",
+        "revision" : "952483da4c47d51b1c6e9a026c4daac9f5cd42c3"
+      }
+    },
+    {
+      "identity" : "ghgungnircore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/gnglobaldependencies/ios/ghgungnircore.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "bd3208c774d66987a2191bd016e54b40b666c23c"
+      }
+    },
+    {
+      "identity" : "ghmjolnircore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/gnglobaldependencies/ios/ui/ghmjolnircore.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "000343569727af1ebd1624cc8f0eea838f92a5a1"
+      }
+    },
+    {
+      "identity" : "ghvultangcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/gnglobaldependencies/ios/ghvultangcore.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "daebdadcb9795c6c99789e3d741d264d73092d65"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core",
+      "state" : {
+        "revision" : "6f6a0f415bd33cf2ced4467e36a47f7c84f0a1d7",
+        "version" : "12.5.1"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "95ebae968d1183decef9ac5990a7f097d02b603e"
+      }
+    },
+    {
+      "identity" : "stpdomaincore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/stp/ios/dependencies/business/stpdomaincore.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "aab014a4c4ee489532dc367d433d988939d87720"
+      }
+    },
+    {
+      "identity" : "stpinteractorcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/stp/ios/dependencies/business/stpinteractorcore.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "f55efe5fa979382e27fbf3f81e970f144242c281"
+      }
+    },
+    {
+      "identity" : "stplocalrepositorycore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/stp/ios/dependencies/business/stplocalrepositorycore.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "73f56318715e86eb8ed7215d716e48006897a962"
+      }
+    },
+    {
+      "identity" : "stponboardingapi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/stp/ios/dependencies/apis/stponboardingapi.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "c3462c3bbb2db87b3338cf8d1bb4eceff56e7c93"
+      }
+    },
+    {
+      "identity" : "stpremoterepositorycore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/stp/ios/dependencies/business/stpremoterepositorycore.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "4646d0ae0eff5feeef8f5400f4d97dea8a0ad58e"
+      }
+    },
+    {
+      "identity" : "stpsdkcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/stp/ios/sdk/stpsdkcore.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "0d8e5a980c4c07dcdd72cbacd0488ed1081782e9"
+      }
+    },
+    {
+      "identity" : "stpsecuritycore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://git.gonet.us/stp/ios/dependencies/business/stpsecuritycore.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "1b4f767c117b41bb27bca0ed1884e6b49d87d001"
+      }
+    },
+    {
+      "identity" : "swiftdate",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/malcommac/SwiftDate.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6190d0cefff3013e77ed567e6b074f324e5c5bf5"
+      }
+    },
+    {
+      "identity" : "swiftkeychainwrapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jrendel/SwiftKeychainWrapper",
+      "state" : {
+        "revision" : "185a3165346a03767101c4f62e9a545a0fe0530f",
+        "version" : "4.0.1"
+      }
+    },
+    {
+      "identity" : "tinyconstraints",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/roberthein/TinyConstraints.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a89996a77d364eb85abdd09d42d2274e35ba56dc"
+      }
+    }
+  ],
+  "version" : 2
+}

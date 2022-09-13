@@ -12,10 +12,23 @@ export default class App extends Component{
             NativeModules.HelloWorldModule.ShowMessage("This is first time we are creating bridge. :)", 5000);
           }
           else if(Platform.OS == "ios"){
-            NativeModules.HelloWorld.ShowMessage("DUUUU, DU HAST", 15.5);
+            NativeModules.HelloWorld.ShowMessage("HOLA, SI S PUDO DESDE LA VERSIÓN 0.67.3 :)", 15.5);
           }
         }}>
           <Text>Pushéame!</Text>
+
+
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=>{
+          if(Platform.OS == "android"){
+            NativeModules.HelloWorldModule.ShowMessage("This is first time we are creating bridge. :)", 5000);
+          }
+          else if(Platform.OS == "ios"){
+            NativeModules.CallApi.callApi();
+          }
+        }}>
+          <Text>Clíck aquí para llamar el método de la api!</Text>
         </TouchableOpacity>
       </View>
     )

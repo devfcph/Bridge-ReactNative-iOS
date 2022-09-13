@@ -1,18 +1,27 @@
 //
 //  HelloWorld.swift
-//  DuHast
+//  BridgeOne
 //
-//  Created by Francisco Perez on 05/09/22.
-//  Copyright © 2022 Facebook. All rights reserved.
-//
-
+//  Created by Francisco Perez on 07/09/22.
+//  OOOOOK, ESTO FUNCIONA
 
 import Foundation
 import UIKit
+import stpinteractorcore
+import stpdomaincore
+import stpremoterepositorycore
+import Combine
 
 @objc(HelloWorld) // Module Name
 
 class HelloWorld : NSObject, RCTBridgeModule {
+  
+  private var subscriber: AnyCancellable?
+  
+  private lazy var tokenInteractor: STPTokenGatewayInteractor = {
+    let interactor = STPTokenGatewayInteractor(bundle: .main)
+    return interactor
+  }()
   
   
   static func moduleName() -> String!{
@@ -26,21 +35,26 @@ class HelloWorld : NSObject, RCTBridgeModule {
   
   @objc
   func ShowMessage(_ message:NSString, duration:Double) -> Void {
-    let alert = UIAlertController(title:nil, message: message as String, preferredStyle: .alert);
-    let seconds:Double = duration;
-    alert.view.backgroundColor = .black
-    alert.view.alpha = 0.5
-    alert.view.layer.cornerRadius = 14
-    alert.view.backgroundColor = .yellow
+    self.subscriber = self.tokenInteractor.getToken(tokenEntity: STPTokenRequestEntity(username: "empty", password: "123"))?
+      .receive(on: DispatchQueue.main).sink(receiveCompletion: { response in
+        switch response {
+        case .failure(let error):
+          dump(error)
+        case .finished:
+          break
+        }
+      }, receiveValue: { model in
+        dump(model)
+      })
     
-    DispatchQueue.main.async {
-      (UIApplication.shared.delegate as? AppDelegate)?.window.rootViewController?.present(alert, animated: true, completion: nil);
-    }
-    
-    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds, execute: {
-      alert.dismiss(animated: true, completion: nil);
-    })
   }
+  
+  @objc
+  func callMainApi() -> Void {
+    print("Holi")
+  }
+  
+  
   
   
 }
